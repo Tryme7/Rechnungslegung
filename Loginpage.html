@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<php
+$db = mysqli_connect("localhost", "root", "", "rechnungslegung");
+if(!$db)
+{
+  exit("Verbindungsfehler: ".mysqli_connect_error());
+}
+>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+        <body>
+            <h1>Rechnungslegung</h1>
+            <h2>Login Site</h2>
+            <div class="form">
+                <form>
+                    <label for="UID">Username</label><br>
+                    <input type="User" id="UID"><br>
+                    <label for="pw">Passwort</label><br>
+                    <input type="password" id="pw"><br><br>
+                    <input type="button" class="button" value="Login">
+                </form>
+            </div>
+            <div class="register">
+            <p>no kein member? registrier di</p>
+                <form2>
+                    <input type="button" class="button" value="Register">
+                </form2>
+            </div>
+        </body>
+</html>

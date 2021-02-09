@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<php
+$db = mysqli_connect("localhost", "root", "", "rechnungslegung");
+if(!$db)
+{
+  exit("Verbindungsfehler: ".mysqli_connect_error());
+}
+>
+<html>
+    <body>
+        <h1>rechnungslegung</h1>
+        <php
+        $abfrage = "select * from users"
+        $ergebnis = myspli_query($db, $abfrage)
+        while($row) = mysqli_fetch_object($ergebnis))
+        {
+        echo $row -> url;
+        echo "<br />";
+        }
+        >
+    </body>
+</html>
